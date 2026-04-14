@@ -1,0 +1,96 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #4a4a8a;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+/* PROJETOS */
+#lista-projetos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4a4a8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #4a4a8a;
+  color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #lista-projetos {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
