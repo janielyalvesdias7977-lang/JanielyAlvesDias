@@ -1,20 +1,18 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
 body {
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f4f6f8;
   color: #333;
 }
 
 /* HEADER */
 header {
-  background: #4a4a8a;
+  background: linear-gradient(90deg, #4a4a8a, #6c63ff);
   color: white;
   padding: 20px;
 }
@@ -34,11 +32,12 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* SEÇÕES */
 section {
-  padding: 60px 20px;
+  padding: 70px 20px;
   min-height: 100vh;
 }
 
@@ -52,25 +51,36 @@ section {
 
 .card {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  width: 220px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 240px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card a {
   display: inline-block;
   margin-top: 10px;
-  color: #4a4a8a;
-  text-decoration: none;
+  color: #6c63ff;
   font-weight: bold;
+  text-decoration: none;
+}
+
+/* CONTATO */
+#contato {
+  background: #eef0ff;
+  text-align: center;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
-  background: #4a4a8a;
+  background: #333;
   color: white;
 }
 
